@@ -1,1 +1,28 @@
+#MissingNumber 
+class Solution:
 
+def missingNumber(self, nums):
+
+# Calculate the expected sum of numbers from 0 to n
+
+n len(nums)
+
+expected_sumn(n+1) // 2
+
+actual_sum sum(nums)
+
+return expected_sum actual_sum
+
+def_driver():
+
+# Example input
+
+param_1 [3,0,1]
+
+ret Solution().missingNumber(param_1)
+
+print("Missing number is:", ret)
+
+#Run the driver
+
+_driver()
