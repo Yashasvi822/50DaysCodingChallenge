@@ -1,17 +1,1 @@
-#Plus One 
 
-class Solution(object):
-    def plusOne(self, digits):
-      
-        n = len(digits)
-        
-        # Traverse the digits from the end to the beginning
-        for i in range(n - 1, -1, -1):
-            if digits[i] < 9:
-                digits[i] += 1
-                return digits
-            else:
-                digits[i] = 0
-        
-        # If we exit the loop, it means all digits were 9
-        return [1] + [0] * n
