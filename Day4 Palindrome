@@ -1,1 +1,15 @@
-
+#Palindrome
+class Solution(object):
+    def isPalindrome(self, x):
+        # If the number is negative, it's not a palindrome
+        if x < 0:
+            return False
+        
+        # Convert the number to a string
+        x_str = str(x)
+        
+        # Check if the string is the same when reversed
+        if x_str == x_str[::-1]:
+            return True
+        else:
+            return False
