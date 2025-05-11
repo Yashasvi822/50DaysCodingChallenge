@@ -1,0 +1,9 @@
+#CountOddNumbersInAnIntervalRange
+class Solution(object):
+    def countOdds(self, low, high):
+        
+        return (high + 1) // 2 - (low // 2)
+
+# Example usage:
+sol = Solution()
+print(sol.countOdds(3, 9)) 
