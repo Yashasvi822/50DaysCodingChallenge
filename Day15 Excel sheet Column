@@ -1,0 +1,11 @@
+#ExcelSheetColumn
+class Solution(object):
+    def convertToTitle(self, columnNumber):
+       
+        result = ""
+        while columnNumber > 0:
+            columnNumber -= 1  # Adjust for 1-based indexing
+            remainder = columnNumber % 26
+            result = chr(65 + remainder) + result  # 65 is ASCII for 'A'
+            columnNumber //= 26
+        return result
